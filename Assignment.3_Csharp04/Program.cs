@@ -76,7 +76,22 @@ internal class Program
         Console.WriteLine("----------------------------------------------");
 
         #region Question 8
-
+         void ReplaceArray(ref double[] prices)
+        {
+            double[] newPrices = { 10.0, 12.5, 15.0 };
+            prices = newPrices;
+        }
+        double[] originalPrices = { 25.5, 40.0, 33.75 };
+        Console.WriteLine("Original prices before replacement:");
+        foreach (double price in originalPrices)
+        {
+            Console.Write(price + " ");
+        }
+        ReplaceArray(ref originalPrices);
+        Console.WriteLine("\nOriginal prices after replacement:\n");
+        foreach (double price in originalPrices) { 
+            Console.Write(price + " ");
+        }
         #endregion
     }
 }
