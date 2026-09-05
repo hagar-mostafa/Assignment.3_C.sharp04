@@ -52,5 +52,21 @@ internal class Program
         // No changes to the original pages variable , And that's because of calling by value.
         #endregion
 
+        Console.WriteLine("----------------------------------------------");
+
+        #region Question 6
+       double ApplyDiscount(double[] prices) => prices[0] - 5;
+        double[] Prices = { 25.5, 40.0 }; 
+        Console.WriteLine($"Discounted price: {ApplyDiscount(Prices)}");
+        Console.WriteLine($"Original prices: [{Prices[0]}]");
+        // The Original value definitely changed because of calling by reference. 
+        // arrays works by reference 
+        #endregion
+
+        Console.WriteLine("----------------------------------------------");
+
+        #region Question 7
+
+        #endregion
     }
 }
