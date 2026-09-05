@@ -93,5 +93,27 @@ internal class Program
             Console.Write(price + " ");
         }
         #endregion
+
+        Console.WriteLine("\n----------------------------------------------\n");
+
+        #region Question 9
+        bool TryGetPrice(string title, out double price)
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0.0;
+                return false;
+            }
+        }
+        Console.WriteLine($"The state of this title is : {TryGetPrice("Clean Code", out double cleanCodePrice)}");
+        Console.WriteLine($"Price of 'Clean Code': {cleanCodePrice}");
+        #endregion
+
+
     }
 }
