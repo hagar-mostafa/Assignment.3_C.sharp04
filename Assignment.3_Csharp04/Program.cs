@@ -49,7 +49,7 @@ internal class Program
         int pages = 400;
         Console.WriteLine($"Total pages after bonus: {AddBonusPages(pages)}");
         Console.WriteLine($"Pages: {pages}");
-        // No changes to the original pages variable , And that's because of calling by value.
+        // No changes to the original pages variable ,That's because of calling by value.
         #endregion
 
         Console.WriteLine("----------------------------------------------");
@@ -66,6 +66,16 @@ internal class Program
         Console.WriteLine("----------------------------------------------");
 
         #region Question 7
+        int AddBonusPagesByRef(ref int pages) => pages += 50;
+       int pagesRef = 400;
+        Console.WriteLine($"Total pages after bonus: {AddBonusPagesByRef(ref pagesRef)}");
+        Console.WriteLine($"Pages: {pagesRef}");
+        // Changes to the original pages variable because of calling by reference.
+        #endregion
+
+        Console.WriteLine("----------------------------------------------");
+
+        #region Question 8
 
         #endregion
     }
