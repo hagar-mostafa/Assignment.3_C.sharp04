@@ -44,7 +44,7 @@ internal class Program
 
         Console.WriteLine("----------------------------------------------");
 
-        #region Question 5
+        #region Question 5 
          int AddBonusPages(int pages) => pages + 50;
         int pages = 400;
         Console.WriteLine($"Total pages after bonus: {AddBonusPages(pages)}");
