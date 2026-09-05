@@ -88,13 +88,13 @@ internal class Program
             Console.Write(price + " ");
         }
         ReplaceArray(ref originalPrices);
-        Console.WriteLine("\nOriginal prices after replacement:\n");
+        Console.WriteLine("\nOriginal prices after replacement:");
         foreach (double price in originalPrices) { 
             Console.Write(price + " ");
         }
         #endregion
 
-        Console.WriteLine("\n----------------------------------------------\n");
+        Console.WriteLine("\n----------------------------------------------");
 
         #region Question 9
         bool TryGetPrice(string title, out double price)
@@ -110,10 +110,22 @@ internal class Program
                 return false;
             }
         }
-        Console.WriteLine($"The state of this title is : {TryGetPrice("Clean Code", out double cleanCodePrice)}");
+        Console.WriteLine($"The state of this book is : {TryGetPrice("Clean Code", out double cleanCodePrice)}");
         Console.WriteLine($"Price of 'Clean Code': {cleanCodePrice}");
         #endregion
 
+        Console.WriteLine("----------------------------------------------");
+
+        #region Question 10
+       void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Book Title: {title}, Pages: {pages}");
+        }
+        PrintBookInfo("Atomic Habits", 400);
+        PrintBookInfo("Rich Dad Poor Dad");
+        #endregion
+
+        Console.WriteLine("----------------------------------------------");
 
     }
 }
