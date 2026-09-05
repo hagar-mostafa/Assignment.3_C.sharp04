@@ -33,6 +33,24 @@ internal class Program
 
         Console.WriteLine("----------------------------------------------");
 
+        #region Question 4
+        void PrintBookTitle(string title)
+        {
+            Console.WriteLine($"Book Title: {title}");
+        }
+
+        PrintBookTitle("Clean Code");
+        #endregion
+
+        Console.WriteLine("----------------------------------------------");
+
+        #region Question 5
+         int AddBonusPages(int pages) => pages + 50;
+        int pages = 400;
+        Console.WriteLine($"Total pages after bonus: {AddBonusPages(pages)}");
+        Console.WriteLine($"Pages: {pages}");
+        // No changes to the original pages variable , And that's because of calling by value.
+        #endregion
 
     }
 }
