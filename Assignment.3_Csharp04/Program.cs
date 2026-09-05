@@ -131,5 +131,19 @@ internal class Program
         // another way to call the method with named arguments
         PrintBookInfo(pages: 450, title: "The 7 Habits of Highly Effective People");
         #endregion
+
+        Console.WriteLine("----------------------------------------------");
+
+        #region Question 12
+        // Params  is used as a parameter which can take the variable number of arguments of specific data type 
+        void PrintAllTitles(params string[] titles) {
+            Console.WriteLine("The books names is : ");
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
+        }
+        PrintAllTitles("Harry Potter ", "Sherlock Holmes " , "The Lord of the rings ");
+        #endregion
     }
 }
