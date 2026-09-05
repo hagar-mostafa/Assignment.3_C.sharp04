@@ -127,5 +127,9 @@ internal class Program
 
         Console.WriteLine("----------------------------------------------");
 
+        #region Question 11
+        // another way to call the method with named arguments
+        PrintBookInfo(pages: 450, title: "The 7 Habits of Highly Effective People");
+        #endregion
     }
 }
