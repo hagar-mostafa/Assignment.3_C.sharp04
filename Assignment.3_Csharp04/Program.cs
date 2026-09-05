@@ -12,7 +12,7 @@ internal class Program
 
         Console.WriteLine("----------------------------------------------");
 
-        #region Question 2
+        #region Question 2 
         int[,] shelfCopies = new int[,] {
         {3 ,5 }, // shelf 0
         { 2 , 6 }, // shelf 1
